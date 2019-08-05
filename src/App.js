@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import Table from './components/table';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Simple react hook app
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <article>
+        Add/Delete number of rows
+        <Table/>
+      </article>
+      <footer>
+      <hr/>
+      This simple logic to demonstrate the power of react hooks, making a functional conponent a 'stateful component' with the help of 'useState'.
+      </footer>
+
     </div>
   );
 }
